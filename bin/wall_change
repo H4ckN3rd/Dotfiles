@@ -1,0 +1,22 @@
+#!/bin/bash
+
+# If no argument is provided, set a random wallpaper from the ~/Pictures directory
+if [ -z "$1" ]; then
+    IMAGE_PATH=$(find "$HOME/Pictures" -type f \( -iname '*.jpg' -o -iname '*.png' \) | shuf -n 1)
+else
+    IMAGE_PATH="$1"
+fi
+
+# Set wallpaper using feh
+feh --bg-fill "$IMAGE_PATH"
+
+# Generate color scheme using pywal
+wal -i "$IMAGE_PATH"
+
+# Reload terminal colors
+cat "$HOME/.cache/wal/sequences"
+
+# Update Polybar colors
+$HOME/.config/polybar/material/scripts/pywal.sh "$IMAGE_PATH"
+
+compton
