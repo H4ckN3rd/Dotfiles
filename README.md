@@ -2,6 +2,9 @@
 
 Welcome to my first attempt at creating a personalized and aesthetic Linux rice! Here's an overview of the tools, configurations, and workflow I used to achieve this look. The rice is built on **Parrot Security OS 6.2 (lorikeet)** and features a clean, minimal design.
 
+---
+
+![image](https://github.com/H4ckN3rd/Dotfiles/blob/master/screenshot/ss1.png)
 
 ---
 
