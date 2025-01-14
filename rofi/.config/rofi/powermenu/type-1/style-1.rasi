@@ -84,7 +84,7 @@ inputbar {
 textbox-prompt-colon {
     enabled:                     true;
     expand:                      false;
-    str:                         "";
+    str:                         "";
     padding:                     10px 14px;
     border-radius:               10px;
     background-color:            @bar;
@@ -105,8 +105,8 @@ message {
     padding:                     10px;
     border:                      0px solid;
     border-radius:               10px;
-    border-color:                @ac;
-    background-color:            @bga;
+    border-color:                @al;
+    background-color:            @al;
     text-color:                  @fg;
 }
 textbox {
