@@ -1,8 +1,4 @@
-Here is the reversed order of the README:
-
----
-
-**My First Linux Rice Setup**
+**Linux Rice Setup**
 
 Welcome to my first attempt at creating a personalized and aesthetic Linux rice! Here's an overview of the tools, configurations, and workflow I used to achieve this look. The rice is built on **Parrot Security OS 6.2 (lorikeet)** and features a clean, minimal design.
 
@@ -15,7 +11,7 @@ Welcome to my first attempt at creating a personalized and aesthetic Linux rice!
 **🛠️ Tools and Components**
 
 - **Window Manager**: i3
-- **Launcher**: dmenu
+- **Launcher**: rofi
 - **Status Bar**: Polybar
 - **Color Scheme Generator**: Pywal
 - **Terminal Emulator**: Terminator
