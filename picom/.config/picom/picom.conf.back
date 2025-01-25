@@ -1,0 +1,55 @@
+#################################
+#     GLX backend
+#################################
+backend = "glx";
+vsync = true;
+xrender-sync-fence = "true";
+glx-swap-method = -1;
+
+#################################
+#       Shadows
+#################################
+shadow = false;
+shadow-radius = 5;
+shadow-offset-x = -5;
+shadow-offset-y = -5;
+shadow-opacity = 0.2;
+shadow-ignore-shaped = false;
+
+#################################
+#       Opacity (Translucent Effect)
+#################################
+active-opacity = 1.0;  # Set to full opacity for other apps
+frame-opacity = 1.0;   # Set to full opacity for other apps
+inactive-opacity = 1.0;  # Set to full opacity for other apps
+inactive-opacity-override = true;  # Override opacity for inactive windows
+blur-background = true;  # Enable background blur
+blur-background-frame = true;  # Blur the frames as well
+blur-background-fixed = true;  # Blur the fixed background
+blur-background-exclude = [
+    "window_type = 'dock'",
+    "window_type = 'desktop'"
+];
+blur-kern = "7x7box";  # Type of blur kernel (can change for stronger effect)
+blur-method = "gaussian";  # Gaussian blur method (best for smooth effect)
+blur-strength = 80;  # Increase strength for more blur
+
+opacity-rule = [
+  "90:class_g = 'Terminator'"  # Apply opacity rule only for Terminator
+];
+
+#################################
+#       Fading (for smoother transitions)
+#################################
+fading = true;  # Enable fading effect for windows
+fade-delta = 4;  # Time in milliseconds for each fade step
+fade-in-step = 0.03;  # Opacity change per step for fading in
+fade-out-step = 0.03;  # Opacity change per step for fading out
+
+wintypes:
+{
+  dock = { shadow = false; }
+  dnd = { shadow = false; }
+  popup_menu = { opacity = 1.0; }
+  dropdown_menu = { opacity = 1.0; }
+}
