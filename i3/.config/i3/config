@@ -232,7 +232,12 @@ mode "$mode_gaps_outer" {
         bindsym Escape mode "default"
 }
 
+## Windows Manipulation
+for_window [class="(?i)terminator"] border none
+for_window [class="(?i)terminator"] border pixel 1
 
+client.focused   #ffffff #ffffff #ffffff #000000
+client.unfocused #000000 #000000 #000000 #ffffff
 
 
 
