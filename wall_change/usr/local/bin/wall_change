@@ -11,12 +11,12 @@ fi
 feh --bg-fill "$IMAGE_PATH"
 
 # Generate color scheme using pywal
-wal -i "$IMAGE_PATH"
+#wal -l -i "$IMAGE_PATH"
 
 # Reload terminal colors
-cat "$HOME/.cache/wal/sequences"
+#cat "$HOME/.cache/wal/sequences"
 
 # Update Polybar colors
-$HOME/.config/polybar/material/scripts/pywal.sh "$IMAGE_PATH"
+#$HOME/.config/polybar/material/scripts/pywal.sh "$IMAGE_PATH"
 
-compton
+picom &
