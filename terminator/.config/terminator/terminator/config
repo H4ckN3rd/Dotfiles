@@ -20,7 +20,7 @@
     show_titlebar = False
     scrollbar_position = hidden
     scrollback_infinite = True
-    palette = "#141616:#8cb8b8:#2d3031:#444849:#616668:#848a8d:#acb4b7:#dee3e5:#ed49b1:#bd794c:#eb92c3:#48b3ca:#4eadc3:#e23aa7:#c57943:#a3b435"
+    palette = "#282828:#b16286:#98971a:#d79921:#458588:#b16286:#689d6a:#ebdbb2:#fb4934:#d65d0e:#fabd2f:#83a598:#8ec07c:#d3869b:#fe8019:#ebdbb2"
     use_system_font = False
     bold_is_bright = True
     title_use_system_font = False
